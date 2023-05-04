@@ -4,11 +4,12 @@ import Menulogo from "../assets/Menulogo";
 import Backlogo from "../assets/Menulogo copy";
 import NavbarMobile from "./NavbarMobile";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [nav, setNav] = useState(true);
   return (
-    <div className="bg-white/75 md:h-20 h-16 sticky top-0 backdrop-blur-lg flex items-center flex-row z-50">
+    <div className="bg-white/75 md:h-20 h-16 sticky top-0 backdrop-blur-lg flex items-center flex-row z-50 px-20">
       <div className="container mx-auto flex items-center justify-between">
         {nav ? (
           <Menulogo
@@ -28,12 +29,12 @@ const Header = () => {
           />
         )}
 
-        <a
-          href="/incio/"
+        <Link
+          to="/"
           className="h-[100%] flex cursor-pointer mx-auto md:mx-0"
         >
           <Logo className="w-48" />
-        </a>
+        </Link>
         <Navbar />
       </div>
 

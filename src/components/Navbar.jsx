@@ -1,22 +1,24 @@
+import { Link } from "react-router-dom";
+
 const Navbar = () => {
   return (
     <>
       <nav className="md:flex gap-3 hidden">
-        <a href="/inicio/" className="links">
+        <Link to="/" className="links">
           Inicio
-        </a>
+        </Link>
         <span>|</span>
-        <a href="/acerca-de-maca/" className="links">
+        <Link to="/about" className="links">
           Acerca de MACA
-        </a>
+        </Link>
         <span>|</span>
-        <a href="/contacto/" className="links">
+        <Link to="/contact" className="links">
           Contacto
-        </a>{" "}
+        </Link>
         <span>|</span>
-        <a href="/preguntas-frecuentes/" className="links">
+        <Link to="/faq" className="links">
           Preguntas Frecuentes
-        </a>
+        </Link>
       </nav>
     </>
   );

@@ -57,7 +57,7 @@ export default function Slides() {
                   src={`/img/${slide.url}`}
                   alt=""
                 ></img>
-                <div className=" bg-black/60 w-full bottom-0 p-3 text-white absolute">
+                <div className="bg-black/60 w-full bottom-0 p-3 text-white absolute">
                   <h3 className="text-lg">{slide.encabezado}</h3>
                   <p className="text-xs">{slide.parrafo}</p>
                 </div>

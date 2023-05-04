@@ -1,14 +1,16 @@
 import "boxicons";
+import { Link } from "react-router-dom";
+
 
 const Footer = () => {
   return (
-    <footer className=" bg-magentaMaca text-white py-24">
+    <footer className=" bg-magentaMaca text-white p-24">
       <div className="container px-4 mx-auto flex gap-y-5 flex-col md:flex-row md:gap-x-12">
         <div className="w-1/2 flex flex-col">
           <h3 className="boldFont text-3xl mb-3">Conócenos</h3>
-          <a href="#" className="regularFont text-2xl mb-1">
+          <Link to="/about" className="regularFont text-2xl mb-1">
             Acerca de MACA
-          </a>
+          </Link>
           <a href="#" className="regularFont text-2xl mb-1">
             Cómo funciona MACA
           </a>

@@ -15,6 +15,10 @@ body {
   font-family: "Comfortaa", cursive;
 }
 
+nav-p {
+  padding: 0px 20px;
+}
+
 .links {
   display: block;
   position: relative;
