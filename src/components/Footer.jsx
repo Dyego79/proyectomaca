@@ -1,28 +1,31 @@
 import "boxicons";
 import { Link } from "react-router-dom";
-
+import { useEffect, useState } from "react";
 
 const Footer = () => {
   return (
-    <footer className=" bg-magentaMaca text-white p-24">
-      <div className="container px-4 mx-auto flex gap-y-5 flex-col md:flex-row md:gap-x-12">
-        <div className="w-1/2 flex flex-col">
+    <footer className="bg-magentaMaca text-white md:p-24 px-4 py-12">
+      <div className="container mx-auto flex gap-y-5 flex-col md:flex-row md:gap-x-12">
+        <div className="md:w-1/3 flex flex-col">
           <h3 className="boldFont text-3xl mb-3">Conócenos</h3>
-          <Link to="/about" className="regularFont text-2xl mb-1">
+          <Link to="/acerca-de-maca" className="regularFont text-2xl mb-1">
             Acerca de MACA
           </Link>
-          <a href="#" className="regularFont text-2xl mb-1">
+          <Link to="/como-funciona" className="regularFont text-2xl mb-1">
             Cómo funciona MACA
-          </a>
+          </Link>
         </div>
-        <div className="w-1/2">
+        <div className="md:w-1/3">
           <h3 className="boldFont text-3xl mb-3">Contáctenos</h3>
         </div>
-        <div className="w-1/2">
+        <div className="md:w-1/3">
           <h3 className="boldFont text-3xl mb-3">Infórmate</h3>
-          <a href="#" className="regularFont text-2xl mb-1">
+          <Link
+            to="terminos-y-condiciones"
+            className="regularFont text-2xl mb-1"
+          >
             Términos y Condiciones
-          </a>
+          </Link>
           <div className="flex flex-row md:gap-x-3 mt-3">
             <a href="#">
               <box-icon

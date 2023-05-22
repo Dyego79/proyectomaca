@@ -8,15 +8,15 @@ const Navbar = () => {
           Inicio
         </Link>
         <span>|</span>
-        <Link to="/about" className="links">
+        <Link to="/acerca-de-maca" className="links">
           Acerca de MACA
         </Link>
         <span>|</span>
-        <Link to="/contact" className="links">
+        <Link to="/contacto" className="links">
           Contacto
         </Link>
         <span>|</span>
-        <Link to="/faq" className="links">
+        <Link to="/preguntas-frecuentes" className="links">
           Preguntas Frecuentes
         </Link>
       </nav>

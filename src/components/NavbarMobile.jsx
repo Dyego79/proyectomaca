@@ -2,18 +2,18 @@ const NavbarMobile = () => {
   return (
     <>
       <nav className="flex flex-col gap-y-4">
-        <a href="#" className="">
+        <Link to="/" className="">
           Inicio
-        </a>
-        <a href="/acerca-de-maca/" className="">
+        </Link>
+        <Link to="acerca-de-maca" className="">
           Acerca de MACA
-        </a>
-        <a href="/contacto/" className="">
+        </Link>
+        <Link to="contacto" className="">
           Contacto
-        </a>{" "}
-        <a href="/preguntas-frecuentes/" className="">
+        </Link>{" "}
+        <Link to="preguntas-frecuentes" className="">
           Preguntas Frecuentes
-        </a>
+        </Link>
       </nav>
     </>
   );

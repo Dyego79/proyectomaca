@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 const Header = () => {
   const [nav, setNav] = useState(true);
   return (
-    <div className="bg-white/75 md:h-20 h-16 sticky top-0 backdrop-blur-lg flex items-center flex-row z-50 px-20">
+    <div className="bg-white/75 md:h-20 h-16 sticky top-0 backdrop-blur-lg flex items-center flex-row z-50">
       <div className="container mx-auto flex items-center justify-between">
         {nav ? (
           <Menulogo
@@ -29,10 +29,7 @@ const Header = () => {
           />
         )}
 
-        <Link
-          to="/"
-          className="h-[100%] flex cursor-pointer mx-auto md:mx-0"
-        >
+        <Link to="/" className="h-[100%] flex cursor-pointer mx-auto md:mx-0">
           <Logo className="w-48" />
         </Link>
         <Navbar />
@@ -46,42 +43,42 @@ const Header = () => {
         }
       >
         <nav className="flex flex-col gap-y-4 w-[70%] h-full bg-[rgb(180,180,180)]">
-          <a
-            href="#"
+          <Link
+            to="/"
             className="bg-white/20 text-magentaMaca boldFont text-xl p-4 mb-1"
             onClick={() => {
               setNav(!nav);
             }}
           >
             Inicio
-          </a>
-          <a
-            href="#"
+          </Link>
+          <Link
+            to="/acerca-de-maca"
             className="bg-white/20 text-magentaMaca boldFont text-xl p-4 my-1"
             onClick={() => {
               setNav(!nav);
             }}
           >
             Acerca de MACA
-          </a>
-          <a
-            href="#"
+          </Link>
+          <Link
+            to="/contacto"
             className="bg-white/20 text-magentaMaca boldFont text-xl p-4 my-1"
             onClick={() => {
               setNav(!nav);
             }}
           >
             Contacto
-          </a>{" "}
-          <a
-            href="#"
+          </Link>{" "}
+          <Link
+            to="/preguntas-frecuentes"
             className="bg-white/20 text-magentaMaca boldFont text-xl p-4 my-1"
             onClick={() => {
               setNav(!nav);
             }}
           >
             Preguntas Frecuentes
-          </a>
+          </Link>
         </nav>
         <box-icon
           type="solid"

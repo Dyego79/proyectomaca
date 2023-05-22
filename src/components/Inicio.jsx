@@ -2,12 +2,19 @@ import Header from "./Header";
 import Logoanfitrion from "../assets/Logoanfitrion";
 import Logohogartemporal from "../assets/Logohogartemporal";
 import Slides from "./Slides";
-
+import { useEffect, useState } from "react";
 
 const Inicio = () => {
+  const [state, setstate] = useState(false);
+  useEffect(() => {
+    document.title = "Inicio";
+  }, []);
   return (
     <>
-      <section className="bg-slate-400 w-full sm:h-[78vh]  h-[55vh] hero flex items-center relative px-12">
+      <section
+        id="inicio"
+        className="bg-slate-400 w-full sm:h-[78vh]  h-[55vh] hero flex items-center relative px-12"
+      >
         <div className="container mx-auto flex flex-col items-start sm:px-5">
           <a href="#" className="sm:hidden right-5 top-5 absolute w-48">
             <img src="/img/escribinosWP.png" alt="" />

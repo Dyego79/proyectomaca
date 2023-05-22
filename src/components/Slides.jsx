@@ -12,7 +12,6 @@ import "swiper/element/css/navigation";
 import { Navigation, Pagination, Autoplay } from "swiper";
 
 export default function Slides() {
-  console.log(slides);
   return (
     <>
       <Swiper

@@ -42,6 +42,7 @@ nav-p {
   transform-origin: bottom left;
   transform: scaleX(1);
 }
+
 .hero {
   background: url(/img/mujer-con-su-mascota-en-brazos-cuidandola.jpg) center -240px;
   background-repeat: no-repeat;
@@ -112,6 +113,12 @@ nav-p {
   background-color: rgba(120, 255, 255, 0.5);
   backdrop-filter: blur(15px);
   z-index: 80;
+}
+.sectionAbout {
+  background-image: url("./img/pexels-anna-tarazevich-14751278.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 @media only screen and (max-width: 1250px) {
   .serviciosContainer {
