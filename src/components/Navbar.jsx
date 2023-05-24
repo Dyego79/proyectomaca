@@ -1,10 +1,12 @@
 import { Link } from "react-router-dom";
+import useMain from "../useMain";
 
 const Navbar = () => {
+  const { handelEs, handelEn } = useMain();
   return (
     <>
       <nav className="md:flex gap-3 hidden">
-        <Link to="/" className="links">
+        <Link to="/es" className="links">
           Inicio
         </Link>
         <span>|</span>

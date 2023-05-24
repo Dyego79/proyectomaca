@@ -1,7 +1,7 @@
 import Logo from "../assets/Logo";
 import { useEffect, useState } from "react";
 import Footer from "./Footer";
-const About = () => {
+const AcercaMaca = () => {
   useEffect(() => {
     document.title = "Acerca de MACA";
   }, []);
@@ -46,9 +46,14 @@ const About = () => {
           que su experiencia con nosotros sea lo más agradable posible.
         </p>
       </section>
-      <section className="sectionAbout w-full md:h-[60vh]"></section>
+      <section className="w-full md:h-[60vh] relative overflow-hidden flex justify-center content-center">
+        <img
+          src="\img\pexels-anna-tarazevich-14751278.jpg"
+          className="w-[150%] h-auto absolute -translate-y-36"
+        />
+      </section>
     </>
   );
 };
 
-export default About;
+export default AcercaMaca;
